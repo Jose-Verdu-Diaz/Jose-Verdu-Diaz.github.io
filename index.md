@@ -23,5 +23,11 @@ _Mar. 2020 - DOI: https://doi.org/10.1212/WNL.0000000000009068_
 **Research award (XI edition)** - University of the Balearic Islands (UIB)<br/>
 _Jul. 2017_
 
+# Languages
+*   **English:** CEFR level C1, IELTS certificate
+
+*   **Catalan:** Native speaker
+
+*   **Spanish:** Native speaker
 
 

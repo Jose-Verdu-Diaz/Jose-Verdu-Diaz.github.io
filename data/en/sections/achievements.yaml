@@ -1,0 +1,21 @@
+# section information
+section:
+  name: Achievements
+  id: achievements
+  enable: true
+  weight: 9
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your achievements achievements
+achievements:
+- title: BSc dissertation with honors
+  image: /images/sections/achievements/finaldissertation.png
+  summary: Received honors on the BSc final dissertation (2022).
+  url: "https://upcommons.upc.edu/handle/2117/374785"
+
+- title: UIB research awards XI
+  image: /images/sections/achievements/uib.jpeg
+  summary: Awarded for the design of a web application for tracking the public bus system (2017).
+  url: "https://residenciauib.es/en/noticias/residenciauib/17/ver"

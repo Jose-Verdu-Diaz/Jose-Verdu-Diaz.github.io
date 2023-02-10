@@ -1,0 +1,40 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Python
+  logo: /images/sections/skills/python.png
+  summary: "Experience in python for data science, web development and software development."
+  url: "https://www.python.org/"
+
+- name: Django
+  logo: /images/sections/skills/django.png
+  summary: "Using Django as my favourite full-stack framework for web-development."
+  url: "https://www.djangoproject.com/"
+
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "Using Linux as my main OS."
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Experience in git and Github as a version control system."
+  url: "https://git-scm.com/"
+
+- name: Gimp
+  logo: /images/sections/skills/gimp.png
+  summary: "Using Gimp as my go-to image processor."
+  url: "https://www.gimp.org/"
+
+- name: C#
+  logo: /images/sections/skills/cs.png
+  summary: "Experience in C# for developing Windows native applications and Unity games/applications."

@@ -14,7 +14,7 @@ categories: ["Basic"]
 ---
 {{< load-plotly >}}
 
-Spotify spits dozens of playlists with recommendations every day, but because I'm nonconformist by nature (and a bit of a nerd) I **need** to have some custom playlist recommendation system. In this post, I will show you how to create an automatic Top 50 songs playlist using the spotify API and Python. In addition, we will implement a [Nearest Neighbour](https://en.wikipedia.org/wiki/Nearest_neighbour_algorithm) algorithm to sort the tracks by similarity and improve the song transitions in the playlist.
+Spotify spits dozens of playlists with recommendations every day, but because I'm a nonconformist by nature (and a bit of a nerd) I **need** to have some custom playlist recommendation system. In this post, I will show you how to create an automatic Top 50 songs playlist using the spotify API and Python. In addition, we will implement a [Nearest Neighbour](https://en.wikipedia.org/wiki/Nearest_neighbour_algorithm) algorithm to sort the tracks by similarity and improve the song transitions in the playlist.
 
 ## Setting up the Spotify Web API requirements
 
@@ -26,13 +26,13 @@ The only difference with the last post will be the definition of the `SCOPE` var
 SCOPE = 'user-modify-playback-state user-library-read user-read-email user-read-private user-top-read user-modify-playback-state user-read-playback-state playlist-modify-public'
 {{< /highlight >}}
 
-If you follow the steps defined in the last post, you should en up with an authenticated `spotify` object.
+If you follow the steps defined in the last post, you should end up with an authenticated `spotify` object.
 
 ## Getting the top 50 tracks
 
-The Spotify API offers an [endpoint](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-users-top-artists-and-tracks) for retrieving the top tracks and artists of an user based on "affinity". How is this "affinity" calculated? Well, I guess it's another :sparkles:*Corporate Secret*:sparkles: that Spotify is not willing to reveal. The API request allows for 3 different time periods for the affinity measurement: long term, medium term and short term. We will used the short term period, which uses the user playing history of the last 4 weeks.
+The Spotify API offers an [endpoint](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-users-top-artists-and-tracks) for retrieving the top tracks and artists of an user based on "affinity". How is this "affinity" calculated? Well, I guess it's another :sparkles:*Corporate Secret*:sparkles: that Spotify is not willing to reveal. The API request allows for 3 different periods for the affinity measurement: long-term, medium-term and short-term. We will used the short-term period, which uses the user playing history of the last 4 weeks.
 
-In addition, we will use the API endpoint that allows to extract the "audio features" (again, more :sparkles:*Corporate Secrets*:sparkles: involved) of the top tracks, as we did on the last [post]({{< relref "../UMAPv1" >}}). We will use this feature in the next section to sort the playlist by track similarity.
+In addition, we will use the API endpoint that allows extracting the "audio features" (again, more :sparkles:*Corporate Secrets*:sparkles: involved) of the top tracks, as we did on the last [post]({{< relref "../UMAPv1" >}}). We will use this feature in the next section to sort the playlist by track similarity.
 
 {{< highlight python "linenos=false" >}}
 import pandas as pd
@@ -70,7 +70,7 @@ df = pd.DataFrame(data)
 
 ## Sorting by similarity
 
-Now, this is the interesting part. Don't you hate holding your tears during a ballad just to be hit in the face by a hard rock track right after? I do. Let's do something about it. The objective is to sort the tracks in a way that does not lead to drastic changes. At our hand, we have the features that Spotify calculates for each track. An approach to this problem is to implement a [Nearest Neighbour](https://en.wikipedia.org/wiki/Nearest_neighbour_algorithm).
+Now, this is the interesting part. Don't you hate holding your tears during a ballad just to be hit in the face by a hard rock track right after? I do. Let's do something about it. The objective is to sort the tracks in a way that does not lead to drastic changes. In our hand, we have the features that Spotify calculates for each track. An approach to this problem is to implement a [Nearest Neighbour](https://en.wikipedia.org/wiki/Nearest_neighbour_algorithm).
 
 {{< mermaid >}}
 stateDiagram-v2
@@ -133,7 +133,7 @@ df.reset_index(inplace=True)
 
 ## Creating the automated spotify playlist
 
-After the last step, we are left with a dataframe of our top 50 tracks sorted by similarity. Now, we need to populate programatically a spotify playlist. For that, first create an empty playlist and copy the URI. We can use the spotify API to replace all existing songs in a playlist by a new set of tracks, as well as for updating the playlist description with the date of the code execution.
+After the last step, we are left with a dataframe of our top 50 tracks sorted by similarity. Now, we need to populate programmatically a spotify playlist. First, create an empty playlist and copy the URI. We can use the spotify API to replace all existing songs in a playlist with a new set of tracks, as well as for updating the playlist description with the date of the code execution.
 
 {{< highlight python "linenos=false" >}}
 PLAYLIST_URI = '1GIjZH2SNNzh4ux9jAf2Ed'

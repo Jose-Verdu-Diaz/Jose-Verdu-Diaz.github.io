@@ -91,7 +91,7 @@ spotify = spt.Spotify(oauth_manager=auth)
 
 The first time you perform a request using the `spotify` you will be requested to authenticate and a token will be generated. This token will be saved in the file specified in `cache_path` (in our case, in `.cache`). Again, if you are using git with your code and uploading the repository anywhere (GitHub, for example) **add the cache file to the `.gitignore`!** This authentication will happen only once, as spotipy takes care of refreshing the token when necessary.
 
-The authentication process is simple: a web browser will be opened and we will copy the URL where we are redirected and paste it in an input box. Depending on your system, IDE or default browser... this process can fail. In my case, running the code from a `.ipynb` file in VS Code fails. To solve it, I run the code from a `.py` once.
+The authentication process is simple: a web browser will be opened and we will copy the URL where we are redirected and paste it into an input box. Depending on your system, IDE or default browser... this process can fail. In my case, running the code from a `.ipynb` file in VS Code fails. To solve it, I run the code from a `.py` once.
 
 Let's trigger the authentication process by performing a request:
 
@@ -301,7 +301,7 @@ fig.show()
 
 We can observe this tendency in our data too, with a clear increase from 1992 peaking in 2006. After this year, we observe how the loudness tends to fall again. This coincides with the decrease in popularity of the CD in favor of digital formats and streaming services, which make use of standardization techniques that makes pumping up the audio level unnecessary, as explained by this [article][13].
 
-Finally, let's have a look to the correlation matrix of the variables.
+Finally, let's have a look at the correlation matrix of the variables.
 
 
 {{< highlight python "linenos=false" >}}

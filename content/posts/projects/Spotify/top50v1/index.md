@@ -1,6 +1,6 @@
 ---
 title: "Top 50 playlist with python v1"
-date: 2023-02-9T00:00:00+00:00
+date: 2023-02-04T00:00:00+00:00
 description: Sample post with multiple images, embedded video ect.
 menu:
   sidebar:
@@ -148,3 +148,12 @@ spotify.user_playlist_change_details(
 {{< /highlight >}}
 
 ![](images/playlist.png)
+
+## To Do
+
+I have been using this for some days and I really enjoy the result. Because of how simple this script is, it could be executed automatically every time the computer is booted up to make updating the playlist even easier. However, some things could be improved:
+
+ - The sorting by similarity works fine, but why not try to over-engineer it and make it unnecessarily better?
+ - The playlist could benefit from some "jitter" or "noise" to spice it up with some new music, and to avoid having the same tracks over and over.
+
+Playing with the Spotify API leads to some useful projects, and I will probably continue with these series in the future.

@@ -1,11 +1,11 @@
 ---
 title: "Improving Spotify with UMAP v1"
-date: 2020-06-08T08:06:25+06:00
+date: 2023-01-07T00:00:00+00:00
 description: Sample post with multiple images, embedded video ect.
 menu:
   sidebar:
     name: Improving Spotify with UMAP v1
-    identifier: rich-content
+    identifier: sptf_umap_v1
     parent: spotify
     weight: 10
 hero: images/header.jpg

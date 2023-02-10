@@ -33,7 +33,8 @@ jobs:
         npm install        
 
     - name: Build
-      run: hugo --minify
+      #run: hugo --minify
+      run: hugo
 
     # push the generated content into the `gh-pages` branch.
     - name: Deploy

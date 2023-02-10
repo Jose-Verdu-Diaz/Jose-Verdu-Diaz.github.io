@@ -12,7 +12,7 @@
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://Jose-Verdu-Diaz.github.io/posts/projects/spotify/top50v1/</guid>
-      <description>Spotify spits dozens of playlists with recommendations every day, but because I&amp;rsquo;m nonconformist by nature (and a bit of a nerd) I need to have some custom playlist recommendation system. In this post, I will show you how to create an automatic Top 50 songs playlist using the spotify API and Python. In addition, we will implement a Nearest Neighbour algorithm to sort the tracks by similarity and improve the song transitions in the playlist.</description>
+      <description>Spotify spits dozens of playlists with recommendations every day, but because I&amp;rsquo;m a nonconformist by nature (and a bit of a nerd) I need to have some custom playlist recommendation system. In this post, I will show you how to create an automatic Top 50 songs playlist using the spotify API and Python. In addition, we will implement a Nearest Neighbour algorithm to sort the tracks by similarity and improve the song transitions in the playlist.</description>
     </item>
     
     <item>

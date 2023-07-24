@@ -57,5 +57,5 @@ degrees:
   publications: #(optional)
   - title: Accuracy of a machine learning muscle MRI-based tool for the diagnosis of muscular dystrophies
     url: "https://doi.org/10.1212/WNL.0000000000009068"
-  extracurricularActivities: #(optional)
-  - Worked as a teacher in programming at a University Academy
+  # extracurricularActivities: #(optional)
+  # - Worked as a teacher in programming at a University Academy

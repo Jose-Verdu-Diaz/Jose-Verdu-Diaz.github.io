@@ -14,11 +14,53 @@ buttons:
   filter: "all"
 - name: "Machine Learning"
   filter: "machine-learning"
-- name: "Image Processing"
-  filter: "image-processing"
+- name: "Neuromuscular Diseases"
+  filter: "neuromuscular-diseases"
 
 # your publications
 publications:
+
+- title: "Longitudinal Analysis of Respiratory Function of Different Types of Limb Girdle Muscular Dystrophies Reveals Independent Trajectories"
+  publishedIn:
+    name: Neurology Genetics
+    date: 11 July 2023
+    url: https://ng.neurology.org/
+  authors:
+  - name: Robert Muni-Lofra
+    url: https://orcid.org/0000-0002-8901-9140
+  - name: Eduard Juanola-Mayos
+  - name: Marianela Schiava
+    url: https://orcid.org/0000-0002-2709-265X
+  - name: Dionne Moat
+  - name: Maha Elseed
+  - name: Jassi Michel-Sodhi
+  - name: Elizabeth Harris
+    url: https://orcid.org/0000-0002-4489-3977
+  - name: Michelle McCallum
+  - name: Ursula Moore
+  - name: Mark Richardson
+  - name: Christina Trainor
+  - name: Karen Wong
+  - name: Monika Malinova
+  - name: Carla Bolano-Diaz
+  - name: Michael John Keogh
+  - name: Elisabetta Ghimenton
+  - name: Jose Verdu-Diaz
+    url: https://orcid.org/0000-0001-5631-0030
+  - name: Anna Mayhew
+  - name: Michela Guglieri
+  - name: Volker Straub
+    url: https://orcid.org/0000-0001-9046-3540
+  - name: Meredith K. James
+    url: https://orcid.org/0000-0001-8078-7744
+  - name: Chiara Marini-Bettolo
+  - name: Jordi Diaz-Manera
+  paper:
+    summary: "The prevalence and progression of respiratory muscle dysfunction in patients with limb girdle muscular dystrophies (LGMDs) has been only partially described to date. Most reports include cross-sectional data on a limited number of patients making it difficult to gain a wider perspective on respiratory involvement throughout the course of the disease and to compare the most prevalent LGMD subtypes. We reviewed the results of spirometry studies collected longitudinally in our cohort of patients in routine clinical visits from 2002 to 2020 along with additional clinical and genetic data. A linear mixed model was used to investigate the factors associated with the progression of respiratory dysfunction."
+    url: https://doi.org/10.1212/NXG.0000000000200084 
+  categories: ["neuromuscular-diseases"]
+  tags: ["LGMD", "Respiratory Function"]
+
 - title: "Extensive femur location and homogeneous infiltration pattern are predictive of severity of bone disease: Re-assessing MRI bone marrow involvement in Gaucher disease through machine learning"
   publishedIn:
     name: Frontiers in Medicine

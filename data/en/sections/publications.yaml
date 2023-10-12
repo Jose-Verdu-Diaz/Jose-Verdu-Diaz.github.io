@@ -20,6 +20,45 @@ buttons:
 # your publications
 publications:
 
+- title: "Decoding the transcriptome of Duchenne muscular dystrophy to the single nuclei level reveals clinical-genetic correlations"
+  publishedIn:
+    name: Cell Death & Disease
+    date: 07 September 2023
+    url: https://www.nature.com/cddis/
+  authors:
+  - name: Xavier Suárez-Calvet
+  - name: Esther Fernández-Simón
+  - name: Daniel Natera
+    url: https://orcid.org/0000-0001-7764-2085
+  - name: Cristina Jou
+  - name: Patricia Pinol-Jurado
+  - name: Elisa Villalobos
+    url: https://orcid.org/0000-0002-5542-2521
+  - name: Carlos Ortez
+  - name: Alexandra Monceau
+  - name: Marianela Schiava
+  - name: Anna Codina
+  - name: José Verdu-Díaz
+    url: https://orcid.org/0000-0001-5631-0030
+  - name: James Clark
+  - name: Zoe Laidler
+  - name: Priyanka Mehra
+  - name: Rasya Gokul-Nath
+  - name: Jorge Alonso-Perez
+  - name: Chiara Marini-Bettolo
+  - name: Giorgio Tasca
+    url: https://orcid.org/0000-0003-0849-9144
+  - name: Volker Straub
+    url: https://orcid.org/0000-0001-9046-3540
+  - name: Andrés Nascimento
+  - name: Jordi Diaz-Manera
+    url: https://orcid.org/0000-0003-2941-7988
+  paper:
+    summary: "Duchenne muscular dystrophy is a genetic disease produced by mutations in the dystrophin gene characterized by early onset muscle weakness leading to severe and irreversible disability. The cellular and molecular consequences of the lack of dystrophin in humans are only partially known, which is crucial for the development of new therapies aiming to slow or stop the progression of the disease. Here we have analyzed quadriceps muscle biopsies of seven DMD patients aged 2 to 4 years old and five age and gender matched controls using single nuclei RNA sequencing (snRNAseq) and correlated the results obtained with clinical data. SnRNAseq identified significant differences in the proportion of cell population present in the muscle samples, including an increase in the number of regenerative fibers, satellite cells, and fibro-adipogenic progenitor cells (FAPs) and a decrease in the number of slow fibers and smooth muscle cells. Muscle samples from the younger patients with stable mild weakness were characterized by an increase in regenerative fibers, while older patients with moderate and progressive weakness were characterized by loss of muscle fibers and an increase in FAPs. An analysis of the gene expression profile in muscle fibers identified a strong regenerative signature in DMD samples characterized by the upregulation of genes involved in myogenesis and muscle hypertrophy. In the case of FAPs, we observed upregulation of genes involved in the extracellular matrix regeneration but also several signaling pathways. Indeed, further analysis of the potential intercellular communication profile showed a dysregulation of the communication profile in DMD samples identifying FAPs as a key regulator of cell signaling in DMD muscle samples. In conclusion, our study has identified significant differences at the cellular and molecular levels in the different cell populations present in skeletal muscle samples of patients with DMD compared to controls."
+    url: https://doi.org/10.1038/s41419-023-06103-5
+  categories: ["neuromuscular-diseases"]
+  tags: ["Duchenne", "snRNAseq"]
+
 - title: "Longitudinal Analysis of Respiratory Function of Different Types of Limb Girdle Muscular Dystrophies Reveals Independent Trajectories"
   publishedIn:
     name: Neurology Genetics

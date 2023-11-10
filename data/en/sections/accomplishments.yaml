@@ -32,7 +32,7 @@ accomplishments:
   organization:
     name: educative
     url: https://www.educative.io
-  courseOverview: This course is a complete guide to master the SDIs. It is created by hiring managers who’ve been working at Google, Facebook, Microsoft, and Amazon. We've carefully chosen a set of questions that have not only been repeatedly asked at top companies, but also provide a thorough experience to handle any system design problem.
+  courseOverview: This course is a complete guide to master the SDIs. It is created by hiring managers who've been working at Google, Facebook, Microsoft, and Amazon. We've carefully chosen a set of questions that have not only been repeatedly asked at top companies, but also provide a thorough experience to handle any system design problem.
   certificateURL: "https://example.com"
 
 - name: Mastering Multithreading Programming with Go (Golang)

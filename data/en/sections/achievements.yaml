@@ -10,6 +10,11 @@ section:
 
 # Your achievements achievements
 achievements:
+- title: MYO-MRI+ 2023 Presentation Prize
+  image: /images/sections/achievements/myomyi-prize.jpeg
+  summary: Received the oral presentation prize in the MYO-MRI+ congress (2023) for the MYO-Guide project.
+  # url: ""
+
 - title: BSc dissertation with honors
   image: /images/sections/achievements/finaldissertation.png
   summary: Received honors on the BSc final dissertation (2022).

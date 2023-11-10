@@ -30,6 +30,7 @@
 <meta property="article:published_time" content="2023-01-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-01-07T00:00:00+00:00" />
 
+
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Improving Spotify with UMAP v1"/>
 <meta name="twitter:description" content="Sample post with multiple images, embedded video ect."/>
@@ -276,20 +277,20 @@
 <p>I&rsquo;m the kind of Spotify user that adds every single song to one single playlist and then complains about not being able to find what he wants to hear. One simple solution would be grouping songs in different playlists by mood, however, this solution is not exciting enough for me&hellip; Instead, I decided to create an app that takes all tracks in a playlist, &ldquo;analyzes&rdquo; and groups them by similarity in an interactive 3D graph, where you can click on a song and automatically play it on Spotify. Ok, maybe that was too much to digest, let&rsquo;s decompose the problem:</p>
 <ul>
 <li><strong>Getting all tracks of a Spotify playlist</strong>: Spotify offers an amazing <a href="https://developer.spotify.com/documentation/web-api/" target="_blank" rel="noopener">Web API</a> with an endpoint for requesting a list of tracks for a given playlist.</li>
-<li><strong>Analyze the tracks</strong>: I might have lied here&hellip; we are not going to analyze and extract the features of the songs, as Spotify does not give access to the audio data. Instead, Spotify generates a set of song features using their ✨<em>Corporate Secrets</em>✨ which are accessible with the Web API.</li>
+<li><strong>Analyze the tracks</strong>: I might have lied here&hellip; we are not going to analyze and extract the features of the songs, as Spotify does not give access to the audio data. Instead, Spotify generates a set of song features using their &#x2728;<em>Corporate Secrets</em>&#x2728; which are accessible with the Web API.</li>
 <li><strong>Grouping tracks by similarity</strong>: To group similar songs we will follow a <a href="https://en.wikipedia.org/wiki/Dimensionality_reduction" target="_blank" rel="noopener"><strong>dimensionality reduction</strong></a> strategy using the <a href="https://en.wikipedia.org/wiki/Dimensionality_reduction" target="_blank" rel="noopener">UMAP</a> technique. We will use <a href="https://plotly.com/python/" target="_blank" rel="noopener">Plotly</a> to create a 3D interactive graph of the UMAP result that will allow us to select individual songs.</li>
 <li><strong>Playing selected songs in Spotify</strong>: We will use, again, the Spotify Web API to play the song we select in the Plotly graph.</li>
 </ul>
-<p>❗ Before moving forward: if you are planning to reproduce this project you might need a <strong>premium Spotify account</strong> to perform some of the API requests. Also, this project assumes you have an intermediate understanding of python, packet managing and other concepts.</p>
+<p>&#x2757; Before moving forward: if you are planning to reproduce this project you might need a <strong>premium Spotify account</strong> to perform some of the API requests. Also, this project assumes you have an intermediate understanding of python, packet managing and other concepts.</p>
 <p>With that being said, let&rsquo;s dive in!</p>
 <hr>
 <h2 id="setting-up-the-spotify-web-api-requirements">Setting up the Spotify Web API requirements</h2>
 <p>The Web API requests require <strong>authentication</strong> with an <a href="https://oauth.net/" target="_blank" rel="noopener">OAuth</a> access token. To obtain a token we first need to log in to <a href="https://developer.spotify.com/dashboard/" target="_blank" rel="noopener">Spotify for Developers Dashboard</a>:</p>
 <p><img src="images/1.png" alt=""></p>
-<p>Once we are logged in, we will click on &ldquo;create an app&rdquo; and a form will appear. We will give an awesome name and an awesome description to our app, and we will accept the Developer Terms of Service and Branding Guidelines after fully reading them 👀.</p>
+<p>Once we are logged in, we will click on &ldquo;create an app&rdquo; and a form will appear. We will give an awesome name and an awesome description to our app, and we will accept the Developer Terms of Service and Branding Guidelines after fully reading them &#x1f440;.</p>
 <p><img src="images/2.png" alt=""></p>
 <p><img src="images/3.png" alt=""></p>
-<p>After accepting we will be redirected to the app&rsquo;s dashboard. There we will be able to find the <code>Client ID</code> and <code>Client Secret</code>. Note that both are blurred out, <strong>you shouldn&rsquo;t share these values anywhere!</strong> 🙊</p>
+<p>After accepting we will be redirected to the app&rsquo;s dashboard. There we will be able to find the <code>Client ID</code> and <code>Client Secret</code>. Note that both are blurred out, <strong>you shouldn&rsquo;t share these values anywhere!</strong> &#x1f64a;</p>
 <p><img src="images/4.png" alt=""></p>
 <p>Write these values in a json file named <code>credentials.json</code>. If you are using git with your code and uploading the repository anywhere (GitHub, for example) <strong>add the json file to the <code>.gitignore</code>!</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
@@ -445,7 +446,7 @@ Plotly.d3.json("plotly/features_box.json", function(err, fig) {
     Plotly.plot('plotly\/features_box.json', fig.data, fig.layout, {responsive: true});
 });
 </script>
-<p>First of all, one thing that pops up is how high the tempo values get: the song with the highest tempo (&ldquo;93 till&rsquo; Infinity&rdquo; by Souls of Mischief) has around 206 BPM! This is an incredibly fast tempo for a Hip Hop song 😕. Let&rsquo;s investigate further using this <a href="https://songbpm.com/" target="_blank" rel="noopener">webpage</a>.</p>
+<p>First of all, one thing that pops up is how high the tempo values get: the song with the highest tempo (&ldquo;93 till&rsquo; Infinity&rdquo; by Souls of Mischief) has around 206 BPM! This is an incredibly fast tempo for a Hip Hop song &#x1f615;. Let&rsquo;s investigate further using this <a href="https://songbpm.com/" target="_blank" rel="noopener">webpage</a>.</p>
 <p><img src="images/8.png" alt=""></p>
 <p>The instrumental version of the track has exactly half the BPM (which is, actually, the correct BPM). However, when performing a qualitative analysis (listening to the track) we can hear lots of rhythmic elements which give the sensation of a double-tempo. The conclusion is that, while the tempo metric might not be accurate, it&rsquo;s not perceptually wrong.</p>
 <p>Another interesting relation to study is how loudness has increased over the years. In music production, the <a href="https://en.wikipedia.org/wiki/Loudness_war" target="_blank" rel="noopener">Loudness War</a> explains how the audio level tends to increase over the years to give the consumer a false sensation of &ldquo;better sounding&rdquo;. Let&rsquo;s see if we can observe this in our data!</p>
@@ -593,7 +594,7 @@ Plotly.d3.json("plotly/umap.json", function(err, fig) {
     Plotly.plot('plotly\/umap.json', fig.data, fig.layout, {responsive: true});
 });
 </script>
-<p>That is fantastic! 😍 Did you notice that <code>click_callback</code> function? Here is where our surprise tool comes handy. We added a click event on each data point that sends a request to spotify to change the currently playing track to the one selected. Keep in mind that you need to have spotify opened and playing for it to work and that this functionality won&rsquo;t work with this blog&rsquo;s plot! Are you starting to see the potential of this idea? Then wait, because we are going to make another step forward!</p>
+<p>That is fantastic! &#x1f60d; Did you notice that <code>click_callback</code> function? Here is where our surprise tool comes handy. We added a click event on each data point that sends a request to spotify to change the currently playing track to the one selected. Keep in mind that you need to have spotify opened and playing for it to work and that this functionality won&rsquo;t work with this blog&rsquo;s plot! Are you starting to see the potential of this idea? Then wait, because we are going to make another step forward!</p>
 <hr>
 <h2 id="clustering">Clustering</h2>
 <p>Before going ahead, it&rsquo;s time for a quick disclaimer: the validity of UMAP as a preprocessing step for clustering is something that it is currently being discussed by the scientific community. Some papers (<a href="https://link.springer.com/chapter/10.1007/978-3-030-51935-3_34" target="_blank" rel="noopener">1</a>) claim to improve substantially the performance of multiple clustering algorithms by applying UMAP first. However, UMAP does not preserve distance nor density between data points, which can affect distance and density-based clustering algorithms (<a href="https://stats.stackexchange.com/questions/263539/clustering-on-the-output-of-t-sne" target="_blank" rel="noopener">2</a>). Having this said, let&rsquo;s move on!</p>

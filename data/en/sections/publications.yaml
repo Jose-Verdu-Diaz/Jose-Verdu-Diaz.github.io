@@ -20,6 +20,28 @@ buttons:
 # your publications
 publications:
 
+- title: "Magnetic resonance imaging-based criteria to differentiate dysferlinopathy from other genetic muscle diseases"
+  publishedIn:
+    name: Neuromuscular Disorders
+    date: 10 Nov 2023
+    url: https://www.sciencedirect.com/journal/neuromuscular-disorders
+  authors:
+  - name: Carla Bolano-Diaz
+  - name: José Verdú-Díaz
+    url: https://orcid.org/0000-0001-5631-0030
+  - name: Alejandro Gonzalez-Chamorro
+  - name: Sam Fitzsimmons
+  - name: Gopi Veeranki
+  - name: Volker Straub
+    url: https://orcid.org/0000-0001-9046-3540
+  - name: Jordi Diaz-Manera
+    url: https://orcid.org/0000-0003-2941-7988
+  paper:
+    summary: "The identification of disease-characteristic patterns of muscle fatty replacement in magnetic resonance imaging (MRI) is helpful for diagnosing neuromuscular diseases. In the Clinical Outcome Study of Dysferlinopathy, eight diagnostic rules were described based on MRI findings. Our aim is to confirm that they are useful to differentiate dysferlinopathy (DYSF) from other genetic muscle diseases (GMD). The rules were applied to 182 MRIs of dysferlinopathy patients and 1000 MRIs of patients with 10 other GMD. We calculated sensitivity (S), specificity (Sp), positive and negative predictive values (PPV/NPV) and accuracy (Ac) for each rule. Five of the rules were more frequently met by the DYSF group. Patterns observed in patients with FKRP, ANO5 and CAPN3 myopathies were similar to the DYSF pattern, whereas patterns observed in patients with OPMD, laminopathy and dystrophinopathy were clearly different. We built a model using the five criteria more frequently met by DYSF patients that obtained a S 95.9%, Sp 46.1%, Ac 66.8%, PPV 56% and NPV 94% to distinguish dysferlinopathies from other diseases. Our findings support the use of MRI in the diagnosis of dysferlinopathy, but also identify the need to externally validate “disease-specific” MRI-based diagnostic criteria using MRIs of other GMD patients."
+    url: https://doi.org/10.1016/j.nmd.2023.11.004
+  categories: ["neuromuscular-diseases", "mri"]
+  tags: ["Dysferlinopathy", "Limb girdle muscular dystrophies", "Magnetic resonance imaging", "Diagnostic imaging", "Skeletal muscles", "Muscle disorders"]
+
 - title: "Decoding the transcriptome of Duchenne muscular dystrophy to the single nuclei level reveals clinical-genetic correlations"
   publishedIn:
     name: Cell Death & Disease

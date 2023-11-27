@@ -22,20 +22,21 @@ buttons:
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
 
 projects:
+- name: Myo-Guide
+  logo: /images/sections/projects/MYOguide_pfp_transparent.png
+  role: Developer
+  timeline: "Feb 2018 - Present"
+  url: "https://www.myoguide.org"
+  summary: Machine Learning web application for diagnosing Neuromuscular Diseases
+  tags: ["academic", "machine-learning", "python"]
+
 - name: HIPO
   logo: /images/sections/projects/hipo.png
-  role: Owner
+  role: Developer
   timeline: "Feb 2022 - Present"
   repo: https://github.com/Jose-Verdu-Diaz/hipo 
   summary: Tool for managing, processing and analysing data from the Hyperion Imaging System.
   tags: ["academic", "imaging", "python", "biomedicine"]
-
-- name: Myo-Guide v1
-  role: Developer
-  timeline: "Feb 2018 - Feb 2020"
-  url: "https://doi.org/10.1212/WNL.0000000000009068"
-  summary: Machine Learning algorithm for diagnosing Neuromuscular Diseases
-  tags: ["academic", "machine-learning", "python", "biomedicine"]
 
 - name: Spotify Clustering
   role: Developer

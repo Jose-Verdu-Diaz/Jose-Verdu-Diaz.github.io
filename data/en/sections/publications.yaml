@@ -20,6 +20,42 @@ buttons:
 # your publications
 publications:
 
+- title: "Imaging mass cytometry analysis of Becker muscular dystrophy muscle samples reveals different stages of muscle degeneration"
+  publishedIn:
+    name: Scientific Reports
+    date: 09 February 2024
+    url: https://www.nature.com/srep/
+  authors:
+  - name: Patricia Piñol-Jurado
+  - name: José Verdú-Díaz
+  - name: Esther Fernández-Simón
+  - name: Cristina Domínguez-González
+  - name: Aurelio Hernández-Lain
+  - name: Conor Lawless
+  - name: Amy Vincent
+  - name: Alejandro González-Chamorro
+  - name: Elisa Villalobos
+  - name: Alexandra Monceau
+  - name: Zoe Laidler
+  - name: Priyanka Mehra
+  - name: James Clark
+  - name: Andrew Filby
+  - name: David McDonald
+  - name: Paul Rushton
+  - name: Andrew Bowey
+  - name: Jorge Alonso Pérez
+  - name: Giorgio Tasca
+  - name: Chiara Marini-Bettolo
+  - name: Michela Guglieri
+  - name: Volker Straub
+  - name: Xavier Suárez-Calvet
+  - name: Jordi Díaz-Manera
+  paper:
+    summary: "Becker muscular dystrophy (BMD) is characterised by fiber loss and expansion of fibrotic and adipose tissue. Several cells interact locally in what is known as the degenerative niche. We analysed muscle biopsies of controls and BMD patients at early, moderate and advanced stages of progression using Hyperion imaging mass cytometry (IMC) by labelling single sections with 17 markers identifying different components of the muscle. We developed a software for analysing IMC images and studied changes in the muscle composition and spatial correlations between markers across disease progression. We found a strong correlation between collagen-I and the area of stroma, collagen-VI, adipose tissue, and M2-macrophages number. There was a negative correlation between the area of collagen-I and the number of satellite cells (SCs), fibres and blood vessels. The comparison between fibrotic and non-fibrotic areas allowed to study the disease process in detail. We found structural differences among non-fibrotic areas from control and patients, being these latter characterized by increase in CTGF and in M2-macrophages and decrease in fibers and blood vessels. IMC enables to study of changes in tissue structure along disease progression, spatio-temporal correlations and opening the door to better understand new potential pathogenic pathways in human samples."
+    url: https://doi.org/10.1038/s41598-024-51906-x
+  categories: ["neuromuscular-diseases", "image-processing"]
+  tags: ["Becker", "Imaging Mass Cytometry", "Image Processing"]
+
 - title: "Magnetic resonance imaging-based criteria to differentiate dysferlinopathy from other genetic muscle diseases"
   publishedIn:
     name: Neuromuscular Disorders
@@ -80,6 +116,86 @@ publications:
     url: https://doi.org/10.1038/s41419-023-06103-5
   categories: ["neuromuscular-diseases"]
   tags: ["Duchenne", "snRNAseq"]
+
+- title: "Analysis of muscle magnetic resonance imaging of a large cohort of patient with VCP-mediated disease reveals characteristic features useful for diagnosis"
+  publishedIn:
+    name: Journal of Neurology
+    date: 21 August 2023
+    url: https://link.springer.com/journal/415
+  authors:
+  - name: Diana Esteller
+  - name: Marianela Schiava
+  - name: José Verdú-Díaz
+  - name: Rocío-Nur Villar-Quiles
+  - name: Boris Dibowski
+  - name: Nadia Venturelli
+  - name: Pascal Laforet
+  - name: Jorge Alonso-Pérez
+  - name: Montse Olive
+  - name: Cristina Domínguez-González
+  - name: Carmen Paradas
+  - name: Beatriz Vélez
+  - name: Anna Kostera-Pruszczyk
+  - name: Biruta Kierdaszuk
+  - name: Carmelo Rodolico
+  - name: Kristl Claeys
+  - name: Endre Pál
+  - name: Edoardo Malfatti
+  - name: Sarah Souvannanorath
+  - name: Alicia Alonso-Jiménez
+  - name: Willem de Ridder
+  - name: Eline De Smet
+  - name: George Papadimas
+  - name: Constantinos Papadopoulos
+  - name: Sofia Xirou
+  - name: Sushan Luo
+  - name: Nuria Muelas
+  - name: Juan J. Vilchez
+  - name: Alba Ramos-Fransi
+  - name: Mauro Monforte
+  - name: Giorgio Tasca
+  - name: Bjarne Udd
+  - name: Johanna Palmio
+  - name: Srtuhi Sri
+  - name: Sabine Krause
+  - name: Benedikt Schoser
+  - name: Roberto Fernández-Torrón
+  - name: Adolfo López de Munain
+  - name: Elena Pegoraro
+  - name: Maria Elena Farrugia
+  - name: Mathias Vorgerd
+  - name: Georgious Manousakis
+  - name: Jean Baptiste Chanson
+  - name: Aleksandra Nadaj-Pakleza
+  - name: Hakan Cetin
+  - name: Umesh Badrising
+  - name: Jodi Warman-Chardon
+  - name: Jorge Bevilacqua
+  - name: Atsuko Nishikawa
+  - name: Ryo Sasaki
+  - name: Chiara Marini-Bettolo
+  - name: Michela Guglieri
+  - name: Volker Straub
+  - name: Tanya Stojkovic
+  - name: Robert Y. Carlier
+  - name: Jordi Díaz-Manera
+  - name: Yukako Nishimori
+  - name: Yoshihiko Saito
+  - name: Yasushi Oya
+  - name: Yoshiaki Takahashi
+  - name: Atsuko Nishikawa
+  - name: Ryo Sasaki
+  - name: Chiara Marini-Bettolo
+  - name: Michela Guglieri
+  - name: Volker Straub
+  - name: Tanya Stojkovic
+  - name: Robert Y. Carlier
+  - name: Jordi Díaz-Manera
+  paper:
+    summary: "Background: The diagnosis of patients with mutations in the VCP gene can be complicated due to their broad phenotypic spectrum including myopathy, motor neuron disease and peripheral neuropathy. Muscle MRI guides the diagnosis in neuromuscular diseases (NMDs); however, comprehensive muscle MRI features for VCP patients have not been reported so far. Methods: We collected muscle MRIs of 80 of the 255 patients who participated in the “VCP International Study” and reviewed the T1-weighted (T1w) and short tau inversion recovery (STIR) sequences. We identified a series of potential diagnostic MRI based characteristics useful for the diagnosis of VCP disease and validated them in 1089 MRIs from patients with other genetically confirmed NMDs. Results: Fat replacement of at least one muscle was identified in all symptomatic patients. The most common finding was the existence of patchy areas of fat replacement. Although there was a wide variability of muscles affected, we observed a common pattern characterized by the involvement of periscapular, paraspinal, gluteal and quadriceps muscles. STIR signal was enhanced in 67% of the patients, either in the muscle itself or in the surrounding fascia. We identified 10 diagnostic characteristics based on the pattern identified that allowed us to distinguish VCP disease from other neuromuscular diseases with high accuracy. Conclusions: Patients with mutations in the VCP gene had common features on muscle MRI that are helpful for diagnosis purposes, including the presence of patchy fat replacement and a prominent involvement of the periscapular, paraspinal, abdominal and thigh muscles."
+    url: https://doi.org/10.1007/s00415-023-11862-4
+  categories: ["neuromuscular-diseases"]
+  tags: ["VCP"]
 
 - title: "Longitudinal Analysis of Respiratory Function of Different Types of Limb Girdle Muscular Dystrophies Reveals Independent Trajectories"
   publishedIn:

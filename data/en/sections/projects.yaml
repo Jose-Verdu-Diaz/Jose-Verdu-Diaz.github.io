@@ -23,7 +23,7 @@ buttons:
 
 projects:
 - name: Myo-Guide
-  logo: /images/sections/projects/MYOguide_pfp_transparent.png
+  logo: /images/sections/projects/MYOguide_pfp_transparentsp.png
   role: Developer
   timeline: "Feb 2018 - Present"
   url: "https://www.myoguide.org"
@@ -42,6 +42,6 @@ projects:
   role: Developer
   timeline: "Sep 2022 - Present"
   url: "https://doi.org/10.1212/WNL.0000000000009068"
-  summary: Machine Learning algorithm for diagnosing Neuromuscular Diseases
+  summary: AI-based spotify playlist clustering and music recommendations.
   tags: ["hobby", "machine-learning", "python", "music"]
 

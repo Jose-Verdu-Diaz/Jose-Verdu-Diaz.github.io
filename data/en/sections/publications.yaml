@@ -20,6 +20,21 @@ buttons:
 # your publications
 publications:
 
+- title: "MRI for the diagnosis of limb girdle muscular dystrophies"
+  publishedIn:
+    name: Current Opinion in Neurology
+    date: October 2024
+    url: https://journals.lww.com/co-neurology/pages/default.aspx
+  authors:
+  - name: Carla Bolano-Díaz
+  - name: José Verdú-Díaz
+  - name: Jordi Díaz-Manera
+  paper:
+    summary: "In the last 30 years, there have many publications describing the pattern of muscle involvement of different neuromuscular diseases leading to an increase in the information available for diagnosis. A high degree of expertise is needed to remember all the patterns described. Some attempts to use artificial intelligence or analysing muscle MRIs have been developed. We review the main patterns of involvement in limb girdle muscular dystrophies (LGMDs) and summarize the strategies for using artificial intelligence tools in this field. The most frequent LGMDs have a widely described pattern of muscle involvement; however, for those rarer diseases, there is still not too much information available. patients. Most of the articles still include only pelvic and lower limbs muscles, which provide an incomplete picture of the diseases. AI tools have efficiently demonstrated to predict diagnosis of a limited number of disease with high accuracy. Muscle MRI continues being a useful tool supporting the diagnosis of patients with LGMD and other neuromuscular diseases. However, the huge variety of patterns described makes their use in clinics a complicated task. Artificial intelligence tools are helping in that regard and there are already some accessible machine learning algorithms that can be used by the global medical community."
+    url: https://doi.org/10.1097/wco.0000000000001305
+  categories: ["neuromuscular-diseases", "mri"]
+  tags: ["Magnetic resonance imaging", "Diagnostic imaging"]
+
 - title: "Imaging mass cytometry analysis of Becker muscular dystrophy muscle samples reveals different stages of muscle degeneration"
   publishedIn:
     name: Scientific Reports
